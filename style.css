@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 
+
 body {
   --color-primary: #f76c5e;
   --color-secondary: #f68e5f;
-  --color-tertiary: #ffeee6;
+  --color-tertiary: #ffeee6;    
 }
 
 
@@ -33,12 +34,13 @@ h3 {
 }
 
 
-input[type="radio"] {
-  filter: grayscale(1);
+input[type='radio'] {
+  filter: grayscale(1); 
 }
 
-input[type="text"],
-input[type="email"] {
+
+input[type='text'],
+input[type='email'] {
   width: 100%;
   margin-right: 10px;
   padding: 5px;
@@ -50,8 +52,8 @@ input[type="email"] {
   color: var(--color-primary);
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input[type='text']::placeholder,
+input[type='email']::placeholder {
   color: var(--color-secondary);
   opacity: 50%;
 }
@@ -60,7 +62,7 @@ button {
   padding: 5px;
   border: none;
   border-radius: 8px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 17px;
   color: var(--color-secondary);
@@ -77,6 +79,7 @@ button:focus {
   background-color: var(--color-tertiary);
   border: 3px solid var(--color-primary);
   padding: 2px;
+  
 }
 
 
@@ -86,7 +89,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif; 
 }
 
 header {
@@ -125,12 +128,11 @@ footer {
   background-color: var(--color-secondary);
 }
 
-
 .optionSource {
   margin: 20px;
 }
 
-.optionSource input[type="radio"]:not(:first-child) {
+.optionSource input[type='radio']:not(:first-child) {
   margin-left: 20px;
 }
 
@@ -158,7 +160,7 @@ footer {
 }
 
 
-.zoneSaisie input[type="text"] {
+.zoneSaisie input[type='text'] {
   width: 80%;
 }
 
@@ -202,6 +204,7 @@ footer {
   z-index: 1;
 }
 
+
 .active {
   display: flex !important;
 }
@@ -213,10 +216,9 @@ footer {
 
 .popup div {
   font-size: 25px;
-  padding: 5px;
+  padding : 5px;
   padding-bottom: 15px;
 }
-
 
 .popup input {
   margin-bottom: 10px;
@@ -227,19 +229,18 @@ footer {
 }
 
 
-
 @media screen and (max-width: 1200px) {
   main {
-    width: 60%;
-    padding: 30px;
+      width: 60%;
+      padding: 30px;
   }
 }
+
 
 
 @media screen and (max-width: 800px) {
   main {
-    width: 90%;
-    padding: 10px;
+      width: 90%;
+      padding: 10px;
   }
 }
-
